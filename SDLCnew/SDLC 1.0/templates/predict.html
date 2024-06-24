@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Old Laptop Price Prediction Result</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .prediction {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Old Laptop Price Prediction Result</h1>
+
+    {% if prediction %}
+        <div class="prediction">
+            Estimated Price: Rs. {{ prediction | round(2) }}
+        </div>
+    {% else %}
+        <p>No prediction available. Please submit the form.</p>
+    {% endif %}
+
+    <a href="/">Predict Another Price</a>
+</body>
+</html>

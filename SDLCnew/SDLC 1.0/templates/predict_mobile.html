@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Old Mobile Price Prediction{% endblock %}
+
+{% block content %}
+<h1>Old Mobile Price Prediction</h1>
+
+<form method="POST" action="/predict_mobile">
+    <label for="brand">Brand:</label>
+    <select name="brand" id="brand">
+        <option value="Apple" {% if request.form.brand == 'Apple' %}selected{% endif %}>Apple</option>
+        <option value="Samsung" {% if request.form.brand == 'Samsung' %}selected{% endif %}>Samsung</option>
+        <option value="OnePlus" {% if request.form.brand == 'OnePlus' %}selected{% endif %}>OnePlus</option>
+        <option value="Google" {% if request.form.brand == 'Google' %}selected{% endif %}>Google</option>
+        <option value="Xiaomi" {% if request.form.brand == 'Xiaomi' %}selected{% endif %}>Xiaomi</option>
+        <option value="Huawei" {% if request.form.brand == 'Huawei' %}selected{% endif %}>Huawei</option>
+        <option value="Motorola" {% if request.form.brand == 'Motorola' %}selected{% endif %}>Motorola</option>
+        <option value="Oppo" {% if request.form.brand == 'Oppo' %}selected{% endif %}>Oppo</option>
+        <option value="Vivo" {% if request.form.brand == 'Vivo' %}selected{% endif %}>Vivo</option>
+        <option value="Realme" {% if request.form.brand == 'Realme' %}selected{% endif %}>Realme</option>
+    </select>
+
+    <label for="model">Model:</label>
+    <input type="text" id="model" name="model" value="{{ request.form.model }}" required>
+
+    <label for="age">Age (Years):</label>
+    <input type="number" id="age" name="age" value="{{ request.form.age }}" required min="0">
+
+    <label for="condition">Condition:</label>
+    <select name="condition" id="condition">
+        <option value="Excellent" {% if request.form.condition == 'Excellent' %}selected{% endif %}>Excellent</option>
+        <option value="Good" {% if request.form.condition == 'Good' %}selected{% endif %}>Good</option>
+        <option value="Fair" {% if request.form.condition == 'Fair' %}selected{% endif %}>Fair</option>
+    </select>
+
+    <label for="specs">Specifications:</label>
+    <input type="text" id="specs" name="specs" value="{{ request.form.specs }}" required>
+
+    <label for="original_price">Original Price (Rs.):</label>
+    <input type="number" id="original_price" name="original_price" value="{{ request.form.original_price }}" required min="0">
+
+    <input type="submit" value="Predict Price">
+</form>
+
+{% if prediction %}
+    <div class="prediction">
+        Estimated Price: Rs. {{ prediction | round(2) }}
+    </div>
+{% endif %}
+{% endblock %}

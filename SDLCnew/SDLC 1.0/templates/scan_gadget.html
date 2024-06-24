@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Scan the Gadgets{% endblock %}
+
+{% block content %}
+<h1>Scan the Gadgets</h1>
+
+<!-- Display the webcam feed -->
+<div>
+    <img src="{{ url_for('video_feed') }}" style="width: 500px; height: 400px;" alt="Video Feed">
+</div>
+
+<!-- Form to input gadget details and indicate if the gadget is broken -->
+<form method="POST" action="/scan_gadget" class="mt-4">
+    <div class="mb-3">
+        <label for="brand" class="form-label">Brand:</label>
+        <select name="brand" id="brand" class="form-select">
+            <option value="Apple" selected>Apple</option>
+            <option value="Samsung">Samsung</option>
+            <option value="OnePlus">OnePlus</option>
+            <option value="Google">Google</option>
+            <option value="Xiaomi">Xiaomi</option>
+            <option value="Huawei">Huawei</option>
+            <option value="Motorola">Motorola</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Vivo">Vivo</option>
+            <option value="Realme">Realme</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="model" class="form-label">Model:</label>
+        <input type="text" id="model" name="model" class="form-control" value="iPhone 11" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="age" class="form-label">Age (Years):</label>
+        <input type="number" id="age" name="age" class="form-control" value="1" required min="0">
+    </div>
+
+    <div class="mb-3">
+        <label for="condition" class="form-label">Condition:</label>
+        <select name="condition" id="condition" class="form-select">
+            <option value="Excellent" selected>Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="specs" class="form-label">Specifications:</label>
+        <input type="text" id="specs" name="specs" class="form-control" value="64GB Storage" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="original_price" class="form-label">Original Price (Rs.):</label>
+        <input type="number" id="original_price" name="original_price" class="form-control" value="60000" required min="0">
+    </div>
+
+    <div class="mb-3">
+        <label for="is_broken" class="form-label">Is the gadget broken?</label>
+        <select name="is_broken" id="is_broken" class="form-select">
+            <option value="no" selected>No</option>
+            <option value="yes">Yes</option>
+        </select>
+    </div>
+
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>
+
+{% if amount is not none %}
+    <div class="alert alert-info mt-3">
+        Estimated Price: Rs. {{ amount }}
+    </div>
+{% endif %}
+{% endblock %}

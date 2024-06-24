@@ -1,0 +1,111 @@
+Brand,Model,Age(Years),Condition,Specifications,Original_Price,Battery Life (hrs),Storage Type,Screen Size (inches)
+Dell,Inspiron 15,5,Fair,Intel i3,30000,4,HDD,15.6
+HP,Pavilion x360,3,Good,Intel i5,60000,8,SSD,14
+Apple,MacBook Pro,2,Excellent,Intel i7,130000,10,SSD,13.3
+Lenovo,Yoga C940,1,Excellent,Intel i9,150000,14,SSD,13.9
+Samsung,Notebook 5,4,Fair,Intel i5,65000,5,HDD,15.6
+Sony,VAIO Z Flip,5,Good,Intel i5,80000,4,SSD,13.3
+Microsoft,Surface Go,3,Good,Intel Pentium,40000,9,SSD,10
+Asus,ZenBook 14,2,Excellent,Intel i7,90000,11,SSD,14
+Acer,Aspire 3,3,Fair,Intel i5,45000,6,HDD,15.6
+Toshiba,Satellite Pro,4,Fair,Intel i3,20000,4,HDD,15.6
+Dell,XPS 13,3,Good,Intel i7,120000,8,SSD,13.3
+HP,EliteBook 840,4,Fair,Intel i5,80000,5,HDD,14
+Apple,MacBook Air,3,Excellent,Apple M1,100000,15,SSD,13.3
+Lenovo,IdeaPad Flex 5,3,Good,AMD Ryzen 5,60000,7,SSD,14
+Samsung,Chromebook 4,1,Good,Intel Celeron,20000,12,SSD,11.6
+Sony,VAIO S,4,Fair,Intel i5,75000,5,HDD,13.3
+Microsoft,Surface Laptop 3,2,Good,Intel i7,110000,11,SSD,13.5
+Asus,VivoBook S15,3,Good,Intel i5,65000,10,SSD,15.6
+Acer,Swift 3,2,Excellent,AMD Ryzen 7,70000,12,SSD,14
+Toshiba,Dynabook,5,Fair,Intel i3,25000,6,HDD,15.6
+Dell,G5 15,2,Good,Intel i7,100000,8,SSD,15.6
+HP,Omen 15,3,Good,Intel i7,110000,6,SSD,15.6
+Apple,MacBook Pro,4,Good,Intel i9,180000,7,SSD,16
+Lenovo,ThinkPad X1,3,Excellent,Intel i7,160000,15,SSD,14
+Samsung,Galaxy Book S,2,Good,Intel i5,70000,11,SSD,13.3
+Sony,VAIO Duo 11,6,Fair,Intel i5,60000,3,SSD,11.6
+Microsoft,Surface Pro 7,2,Excellent,Intel i5,80000,10,SSD,12.3
+Asus,ROG Zephyrus G14,1,Excellent,AMD Ryzen 9,120000,8,SSD,14
+Acer,Nitro 5,3,Good,Intel i5,75000,9,SSD,15.6
+Toshiba,Tecra A50,4,Fair,Intel i3,30000,5,HDD,15.6
+Dell,Precision 5530,3,Excellent,Intel Xeon,170000,9,SSD,15.6
+HP,ProBook 450,4,Fair,Intel i3,40000,5,HDD,15.6
+Apple,MacBook Air,2,Excellent,Intel i5,90000,12,SSD,13.3
+Lenovo,Yoga C740,1,Excellent,Intel i5,95000,14,SSD,14
+Samsung,Notebook 7 Spin,3,Good,Intel i7,100000,8,SSD,13.3
+Sony,VAIO S13,5,Fair,Intel i5,70000,6,HDD,13.3
+Microsoft,Surface Book 2,3,Excellent,Intel i7,130000,17,SSD,15
+Asus,Chromebook Flip,2,Good,Intel Celeron,25000,10,SSD,12.5
+Acer,Predator Helios 300,3,Good,Intel i7,100000,7,SSD,15.6
+Toshiba,Satellite C55,4,Fair,Intel i3,20000,4,HDD,15.6
+Dell,Alienware m15,1,Good,Intel i7,150000,8,SSD,15.6
+HP,Envy 13,3,Good,Intel i5,85000,10,SSD,13.3
+Apple,MacBook Air,2,Excellent,Intel i5,90000,12,SSD,13.3
+Lenovo,Yoga C940,1,Excellent,Intel i7,150000,18,SSD,14
+Samsung,Notebook 7,4,Fair,Intel i5,60000,5,HDD,15.6
+Sony,VAIO Z Flip,5,Fair,Intel i5,80000,4,SSD,13.3
+Microsoft,Surface Pro 6,2,Excellent,Intel i5,75000,10,SSD,12.3
+Asus,ZenBook 13,3,Excellent,Intel i7,90000,13,SSD,13.3
+Acer,Swift 5,2,Excellent,Intel i5,75000,11,SSD,14
+Toshiba,Portege Z30,4,Fair,Intel i5,45000,6,SSD,13.3
+Dell,Latitude 7390,2,Excellent,Intel i7,120000,13,SSD,13.3
+HP,Elite Dragonfly,1,Excellent,Intel i7,160000,17,SSD,13.3
+Apple,MacBook Pro,4,Good,Intel i7,140000,9,SSD,15.4
+Lenovo,ThinkPad X1 Carbon,4,Good,Intel i7,130000,15,SSD,14
+Samsung,Chromebook Plus,2,Good,Intel Celeron,30000,11,SSD,12.2
+Sony,VAIO SX14,4,Fair,Intel i5,90000,6,SSD,14
+Microsoft,Surface Pro X,1,Excellent,Microsoft SQ1,90000,13,SSD,13
+Asus,VivoBook 15,2,Good,Intel i5,50000,8,SSD,15.6
+Acer,Spin 3,3,Good,Intel i3,35000,7,SSD,14
+Toshiba,Satellite L50,4,Fair,Intel i3,25000,5,HDD,15.6
+Dell,XPS 15,3,Good,Intel i7,140000,8,SSD,15.6
+HP,Pavilion 15,2,Good,Intel i5,60000,10,SSD,14
+Apple,MacBook Pro,4,Good,Intel i5,130000,10,SSD,13.3
+Lenovo,Legion Y540,2,Good,Intel i5,80000,7,SSD,15.6
+Samsung,Galaxy Book Flex,2,Good,Intel i5,85000,11,SSD,13.3
+Sony,VAIO Duo 13,6,Fair,Intel i5,65000,3,SSD,13.3
+Microsoft,Surface Laptop Go,1,Good,Intel i5,60000,13,SSD,12.4
+Asus,ROG Strix G15,2,Good,AMD Ryzen 7,90000,10,SSD,15.6
+Acer,Swift 7,1,Excellent,Intel i7,120000,14,SSD,14
+Toshiba,Satellite Pro R50,3,Fair,Intel i3,30000,6,HDD,15.6
+Dell,Inspiron 14,3,Good,Intel i5,70000,8,SSD,14
+HP,Spectre Folio,2,Excellent,Intel i7,140000,14,SSD,13.3
+Apple,MacBook Air,3,Good,Intel i5,80000,10,SSD,13.3
+Lenovo,ThinkPad T490,4,Good,Intel i7,90000,14,SSD,14
+Samsung,Galaxy Book Ion,2,Good,Intel i5,85000,11,SSD,13.3
+Sony,VAIO S15,5,Fair,Intel i5,70000,6,HDD,15.6
+Microsoft,Surface Book 3,1,Excellent,Intel i7,150000,17,SSD,15
+Asus,Chromebook C202,3,Good,Intel Celeron,20000,10,SSD,11.6
+Acer,Nitro 7,2,Good,Intel i7,95000,9,SSD,15.6
+Toshiba,Satellite C850,4,Fair,Intel i3,20000,4,HDD,15.6
+Dell,Latitude 5510,1,Excellent,Intel i5,95000,12,SSD,15.6
+HP,Omen 17,3,Good,Intel i7,110000,8,SSD,17.3
+Apple,MacBook Pro,4,Good,Intel i9,180000,7,SSD,16
+Lenovo,ThinkPad E15,2,Good,Intel i5,75000,10,SSD,15.6
+Samsung,Galaxy Book S,2,Good,Intel i5,70000,11,SSD,13.3
+Sony,VAIO Duo 11,6,Fair,Intel i5,60000,3,SSD,11.6
+Microsoft,Surface Pro 7,2,Excellent,Intel i5,80000,10,SSD,12.3
+Asus,ROG Zephyrus G14,1,Excellent,AMD Ryzen 9,120000,8,SSD,14
+Acer,Predator Helios 300,3,Good,Intel i7,100000,7,SSD,15.6
+Toshiba,Tecra A50,4,Fair,Intel i3,30000,5,HDD,15.6
+Dell,Precision 5530,3,Excellent,Intel Xeon,170000,9,SSD,15.6
+HP,ProBook 430,4,Fair,Intel i3,40000,5,HDD,13.3
+Apple,MacBook Air,1,Excellent,Apple M1,120000,18,SSD,13.3
+Lenovo,ThinkPad T590,4,Good,Intel i7,95000,14,SSD,15.6
+Samsung,Galaxy Book Ion,2,Good,Intel i5,85000,11,SSD,13.3
+Sony,VAIO SX14,4,Fair,Intel i5,90000,6,SSD,14
+Microsoft,Surface Laptop Go,1,Good,Intel i5,60000,13,SSD,12.4
+Asus,ZenBook 14,3,Good,Intel i7,90000,11,SSD,14
+Acer,Aspire 3,3,Fair,Intel i5,45000,6,HDD,15.6
+Toshiba,Satellite Pro,4,Fair,Intel i3,20000,4,HDD,15.6
+Dell,XPS 13,3,Good,Intel i7,120000,8,SSD,13.3
+HP,EliteBook 840,4,Fair,Intel i5,80000,5,HDD,14
+Apple,MacBook Air,3,Excellent,Apple M1,100000,15,SSD,13.3
+Lenovo,IdeaPad Flex 5,3,Good,AMD Ryzen 5,60000,7,SSD,14
+Samsung,Chromebook 4,1,Good,Intel Celeron,20000,12,SSD,11.6
+Sony,VAIO S,4,Fair,Intel i5,75000,5,HDD,13.3
+Microsoft,Surface Laptop 3,2,Good,Intel i7,110000,11,SSD,13.5
+Asus,VivoBook S15,3,Good,Intel i5,65000,10,SSD,15.6
+Acer,Swift 3,2,Excellent,AMD Ryzen 7,70000,12,SSD,14
+Toshiba,Dynabook,5,Fair,Intel i3,25000,6,HDD,15.6

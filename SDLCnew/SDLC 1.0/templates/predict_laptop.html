@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Old Laptop Price Prediction{% endblock %}
+
+{% block content %}
+<h1>Old Laptop Price Prediction</h1>
+
+<form method="POST" action="/predict_laptop">
+    <label for="brand">Brand:</label>
+    <select name="brand" id="brand">
+        <option value="Dell" {% if request.form.brand == 'Dell' %}selected{% endif %}>Dell</option> 
+        <option value="HP" {% if request.form.brand == 'HP' %}selected{% endif %}>HP</option>
+        <option value="Apple" {% if request.form.brand == 'Apple' %}selected{% endif %}>Apple</option>
+        <option value="Lenovo" {% if request.form.brand == 'Lenovo' %}selected{% endif %}>Lenovo</option>
+        <option value="Samsung" {% if request.form.brand == 'Samsung' %}selected{% endif %}>Samsung</option>
+        <option value="Sony" {% if request.form.brand == 'Sony' %}selected{% endif %}>Sony</option>
+        <option value="Microsoft" {% if request.form.brand == 'Microsoft' %}selected{% endif %}>Microsoft</option>
+        <option value="Asus" {% if request.form.brand == 'Asus' %}selected{% endif %}>Asus</option>
+        <option value="Acer" {% if request.form.brand == 'Acer' %}selected{% endif %}>Acer</option>
+    </select>
+
+    <label for="model">Model:</label>
+    <input type="text" id="model" name="model" value="{{ request.form.model }}" required>
+
+    <label for="age">Age (Years):</label>
+    <input type="number" id="age" name="age" value="{{ request.form.age }}" required min="0">
+
+    <label for="condition">Condition:</label>
+    <select name="condition" id="condition">
+        <option value="Excellent" {% if request.form.condition == 'Excellent' %}selected{% endif %}>Excellent</option>
+        <option value="Good" {% if request.form.condition == 'Good' %}selected{% endif %}>Good</option>
+        <option value="Fair" {% if request.form.condition == 'Fair' %}selected{% endif %}>Fair</option>
+    </select>
+
+    <label for="specs">Specifications:</label>
+    <input type="text" id="specs" name="specs" value="{{ request.form.specs }}" required>
+
+    <label for="battery">Battery Life (hrs):</label>
+    <input type="number" id="battery" name="battery" value="{{ request.form.battery }}" required min="0">
+
+    <label for="storage">Storage Type:</label>
+    <select name="storage" id="storage">
+        <option value="SSD" {% if request.form.storage == 'SSD' %}selected{% endif %}>SSD</option>
+        <option value="HDD" {% if request.form.storage == 'HDD' %}selected{% endif %}>HDD</option>
+    </select>
+
+    <label for="screen">Screen Size (inches):</label>
+    <input type="number" id="screen" name="screen" value="{{ request.form.screen }}" required min="0" step="0.1">
+
+    <input type="submit" value="Predict Price">
+</form>
+
+{% if prediction %}
+    <div class="prediction">
+        Estimated Price: Rs. {{ prediction | round(2) }}
+    </div>
+{% endif %}
+{% endblock %}

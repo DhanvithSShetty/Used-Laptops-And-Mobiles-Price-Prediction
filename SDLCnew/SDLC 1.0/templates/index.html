@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Old Gadget Price Prediction{% endblock %}
+
+{% block content %}
+<style>
+    .header {
+        padding: 20px;
+        text-align: center;
+        background: #333;
+        color: white;
+        font-size: 24px;
+    }
+
+    .sliding-text {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .sliding-text div {
+        display: inline-block;
+        padding-left: 100%;
+        animation: slide 15s linear infinite;
+        color: #ff6347;
+        font-size: 20px;
+    }
+
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+
+    .carousel {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        height: 300px;
+        margin: 20px auto;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 1s ease;
+    }
+
+    .carousel:hover img {
+        transform: scale(1.1);
+    }
+
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .buttons-container {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .button {
+        background-color: #ff69b4;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .button:hover {
+        background-color: #ff1493;
+    }
+</style>
+
+<div class="header">
+    Old Gadget Price Prediction
+</div>
+
+<div class="sliding-text">
+    <div>Welcome to the Old Gadget Price Prediction! Get the best prices for your used laptops and mobiles.</div>
+</div>
+
+<div class="carousel">
+    <img src="{{ url_for('static', filename='images/laptop1.jpg') }}" alt="Carousel Image 1">
+    <img src="{{ url_for('static', filename='images/laptop2.png') }}" alt="Carousel Image 2">
+</div>
+
+<div class="buttons-container">
+    <a class="button" href="/predict_laptop">Old Laptop Price Prediction</a>
+    <a class="button" href="/predict_mobile">Old Mobile Price Prediction</a>
+    <a class="button" href="/scan_gadget">Scan the Gadgets</a>
+</div>
+
+<div class="footer">
+    &copy; 2023 Old Gadget Price Prediction. All rights reserved.
+</div>
+{% endblock %}
